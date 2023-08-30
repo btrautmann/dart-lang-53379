@@ -1,0 +1,59 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "compilation_ex",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=test=true"
+            ]
+        },
+        {
+            "name": "compilation_ex (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "compilation_ex (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "args": [
+                "--dart-define=prod=true"
+            ]
+        },
+        {
+            "name": "i_message",
+            "cwd": "i_message",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "prod_message",
+            "cwd": "prod_message",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "test_message",
+            "cwd": "test_message",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "pure dart",
+            "cwd": "pure_dart",
+            "request": "launch",
+            "type": "dart",
+            "program": "bin/pure_dart.dart",
+            "args": [
+                "-D=prod=true"
+            ]
+        }
+    ]
+}

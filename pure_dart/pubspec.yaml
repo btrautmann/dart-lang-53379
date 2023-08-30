@@ -1,0 +1,21 @@
+name: pure_dart
+description: A sample command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+publish_to: none
+
+environment:
+  sdk: ^3.0.7
+
+# Add regular dependencies here.
+dependencies:
+  i_message: # Gets compiled in both AOT and JIT
+    path: ../i_message
+  prod_message: # Gets compiled during AOT
+    path: ../prod_message
+  test_message: # Gets compiled during JIT
+    path: ../test_message
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
